@@ -1,0 +1,135 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    border-radius: 18px;
+    border: 2px solid blueviolet;
+    height: 40px;
+    width: 180px;
+    background: blueviolet;
+    box-shadow: 5px 10px 5px blueviolet;
+    transition: width 0.5s, height 0.5s;
+}
+
+.btn-primary:hover {
+    width: 300px;
+    height: 43px;
+}
+
+h1 {
+    color: #c91ac3;
+    font-weight: 200;
+    font-size: 50px;
+    margin: 15px 0px 0px;
+    font-family: Brush Script MT;
+}
+
+h3 {
+    color: #c91ac3;
+    font-weight: 200;
+    font-size: 50px;
+    margin: 15px 0px 0px;
+    font-family: Brush Script MT;
+}
+
+input {
+    border-radius: 4px;
+    border: transparent;
+    border-bottom: 2px solid blue;
+    width: 280px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    box-shadow: 10px 5px 5px blue;
+    transition: width 0.5s, height 0.5s;
+}
+
+input:hover {
+    width: 300px;
+    height: 43px;
+}
+
+.button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.button :hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#demo {
+    font-family: sans-serif;
+    color: #fc8000;
+    display: inline-block;
+    font-weight: 200;
+    text-align: center;
+    font-size: 55px;
+}
+
+#button2 {
+    background-color: transparent;
+    border-color: transparent;
+    background-color: #00BF96;
+    margin-top: 10px;
+}
+
+#button2 :hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv>div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+
+#clockdiv div>span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+#timer {
+    background: url(clk.jpg);
+    height: 100vh;
+    transition-property: background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
+
+#tt {
+    align-items: center;
+    height: 50vh;
+    margin-top: 10%;
+}
+
+label {
+    margin-left: 20px;
+    font-size: 30px;
+}

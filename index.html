@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body style="background: linear-gradient(to right, rgb(0, 201, 255), rgb(146, 254, 157));">
+    <div>
+        <div id="settime">
+            <h1><b>Count-Down Timer</b></h1><br>
+            <h3>Set-Time</h3><br>
+            <section class="col-sm-12">
+                <div class="form-group">
+                    <div>
+                        <div style="display: inline-block;"><label> DAY</label>
+                            <input required type="number" id="day" max=31 placeholder='DD'></div>
+                        <div style="display: inline-block;"><label>MONTH</label>
+                            <input required type="number" id="month" min=1 max=12 placeholder="MM"></div>
+                        <div style="display: inline-block;">
+                            <label> YEAR</label>
+                            <input required type="number" id="year" min=2021 max=2025 placeholder='YYYY'>
+                        </div>
+
+
+                    </div>
+                    <br><br>
+                    <div>
+                        <div style="display: inline-block;"> <label>HOUR</label>
+                            <input required type="number" id="hour" placeholder='hh'></div>
+                        <div style="display: inline-block;">
+                            <label> MINUTE</label>
+                            <input required type="number" id="min" placeholder='min'>
+                        </div>
+                        <div style="display: inline-block;">
+                            <label> SECOND</label>
+                            <input required type="number" id="sec" placeholder='sec'>
+                        </div>
+
+                    </div>
+                </div><br><br>
+                <button class="btn btn-primary toggleButton" type="submit" onclick=mufkn()>Start Timer</button>
+        </div>
+
+        </section>
+    </div>
+    <div id="timer" style="display: none;">
+        <button class="btn btn-primary button" id="button2" type="submit" onclick=mufkn2()><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12zm8.036-4.024a.75.75 0 00-1.06 1.06L10.939 12l-2.963 2.963a.75.75 0 101.06 1.06L12 13.06l2.963 2.964a.75.75 0 001.061-1.06L13.061 12l2.963-2.964a.75.75 0 10-1.06-1.06L12 10.939 9.036 7.976z"></path></svg></button>
+        <h1>Countdown Clock</h1>
+        <!-- <div id="clockdiv">
+            <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+            </div>
+            <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+            </div>
+            <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+            </div>
+        </div>-->
+        <h1 id="tt">
+            <p id="demo">
+                <div style="display:none;"></div>
+            </p>
+        </h1>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
